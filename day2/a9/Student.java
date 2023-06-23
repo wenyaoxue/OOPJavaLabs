@@ -7,8 +7,11 @@ public class Student {
 		displayDetails(studentOne);
 		Student studentTwo = new Student('H', "Dinil", "Bose");
 		displayDetails(studentTwo);
+		
 		Student studentThree = new Student();
 		displayDetails(studentThree);
+		Student studentFour = new Student();
+		displayDetails(studentFour);
 	}
 
 	private static int nextId=550;
@@ -24,7 +27,6 @@ public class Student {
 	}
 	public Student(char sType, String fname, String lname) {
 		this.studentId = nextId;
-		nextId++;
 		this.studentType = sType;
 		this.studentName = fname + " " + lname;
 	}
